@@ -1,0 +1,41 @@
+# c.hpp program.hpp
+!c.cpp c.hpp cctype cerrno clocale coniow.h cstdint cstdio cstdlib ctype.h cwchar errno.h exception initializer_list iosfwd keys_n_colors.h limits limits.h locale.h new signal.h stddef.h stdint.h stdio.h stdlib.h string string_view type_traits typeinfo utility vector wchar.h #<#>
+!c.hpp cctype cerrno clocale coniow.h cstdint cstdio cstdlib ctype.h cwchar errno.h exception initializer_list iosfwd keys_n_colors.h limits limits.h locale.h new signal.h stddef.h stdint.h stdio.h stdlib.h string string_view type_traits typeinfo utility vector wchar.h #<#>
+!program.cpp c.hpp cctype cerrno clocale cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream initializer_list ios iosfwd iostream istream limits limits.h locale.h new ostream program.hpp signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo wchar.h wctype.h #<#>
+!program.hpp c.hpp cctype cerrno clocale coniow.h cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo utility vector wchar.h wctype.h #<#>
+Back() -> void #<program.hpp>
+Editor _type_ #<c.hpp>
+Editor(int left, int top, int right, int bottom, int text_color, int highlight_color) #<c.hpp>
+Help() -> void #<program.hpp>
+KeyFunc(int c) -> void #<program.hpp>
+OpenFile(Editor& a, string path) -> void #<program.hpp>
+Save() -> void #<program.hpp>
+editor : Editor #<program.cpp>
+help : Editor #<program.cpp>
+main() -> int #<program.cpp>
+	Editor:%X : int #<c.hpp>
+	Editor:%Y : int #<c.hpp>
+	Editor:%Text : vector #<c.hpp>
+	Editor:%isEditing : bool #<c.hpp>
+	Editor:%HighlightColor : int #<c.hpp>
+	Editor:%TextColor : int #<c.hpp>
+	Editor:%Left : int #<c.hpp>
+	Editor:%Top : int #<c.hpp>
+	Editor:%Right : int #<c.hpp>
+	Editor:%Bottom : int #<c.hpp>
+	Editor:%void :  #<c.hpp>
+	Editor::Editing() -> void #<c.hpp>
+	Editor::setEditing(bool a) -> void #<c.hpp>
+	Editor::NumberRows() -> int #<c.hpp>
+	Editor::CurrentNumberRow() -> int #<c.hpp>
+	Editor::CurrentNumberSymbol() -> int #<c.hpp>
+	Editor::GoToRow(int row, int symbol) -> void #<c.hpp>
+	Editor::GetRow(int number) -> string #<c.hpp>
+	Editor::ReplaceRow(string s, int number) -> void #<c.hpp>
+	Editor::DeleteRow(int number) -> void #<c.hpp>
+	Editor::AddRow(string s, int number) -> void #<c.hpp>
+	Editor::AddSymbols(string s, int number) -> void #<c.hpp>
+	Editor::DeleteSymbols(int number) -> void #<c.hpp>
+	Editor::HighlightRow(int to, int from) -> void #<c.hpp>
+	Editor::KeyboardProcessing(void(* f)(int)) -> void #<c.hpp>
+	Editor::DrawText(int to, int from) -> void #<c.hpp>
